@@ -1,0 +1,43 @@
+.resultwindow {
+	background-color: #141414;
+	height: 100px;
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 20px;
+	&__output {
+		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		word-break: break-word;
+		align-items: center;
+		justify-content: end;
+		margin-right: 30px;
+		color: #fff;
+		position: relative;
+	}
+	.operationalClass {
+		top: 15px;
+		font-size: 26px;
+		opacity: 0.5;
+	}
+	.resultClass {
+		font-size: 36px;
+		opacity: 0.9;
+	}
+}
+@media (max-width: 500px){
+	.resultwindow {
+		background-color: #141414;
+		height: 90px;
+		&__output {
+			margin-right: 20px;
+		}
+		.operationalClass {
+			top: 15px;
+			font-size: 20px;
+		}
+		.resultClass {
+			font-size: 30px;
+		}
+	}
+}
